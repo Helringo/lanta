@@ -1,0 +1,14 @@
+{
+  "name": "lanta",
+  "version": "1.0.0",
+  "description": "Atalanta bot",
+  "main": "bot.js",
+  "author": "Helringo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "snekfetch": "^3.5.8",
+    "weeb-api": "^0.2.1",
+    "weeb-sh": "^0.3.3"
+  }
+}
