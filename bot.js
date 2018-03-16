@@ -28,7 +28,7 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setActivity({game: {name: "archery practice", type: 0}});
+	bot.user.setGame("archery practice");
 
 	bot.setInterval(() => {
 		for(let i in bot.mutes){
