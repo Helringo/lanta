@@ -28,7 +28,7 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setGame("archery practice");
+	bot.user.setActivity({game: {name: "archery practice", type: 0}});
 
 	bot.setInterval(() => {
 		for(let i in bot.mutes){
@@ -62,12 +62,12 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
 
      // User Joins a voice channel
-	  guildObj.defaultChannel.send('User has joined a voice channel');
+	  bot.channels.get(424347348920172554).send('User joined voice channel');
 
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
-	  guildObj.defaultChannel.send('User has left a voice channel');
+	  bot.channels.get(424347348920172554).send('User left voice channel');
 
   }
 })
