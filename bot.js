@@ -62,15 +62,23 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
 
      // User Joins a voice channel
-	  bot.channels.get('424347348920172554').send('User joined voice channel');
-
+	  //Ben's Server
+	 if(guild.id === '375971481688997898'){
+	 bot.channels.get('424347348920172554').send('User joined voice channel in LnM');}
+	  //QWT
+	 if(guild.id === '378244597362458625'){
+	 bot.channels.get('382300397353828355').send('User joined voice channel in QWT');}
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
-	  bot.channels.get('424347348920172554').send('User left voice channel');
+	  if(guild.id === '375971481688997898'){
+	 bot.channels.get('424347348920172554').send('User left voice channel in LnM');}
+	  //QWT
+	 if(guild.id === '378244597362458625'){
+	 bot.channels.get('382300397353828355').send('User left voice channel in QWT');}
 
   }
-})
+});
 
 bot.on("message", async message => {
 	if(message.author.bot) return;
