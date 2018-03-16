@@ -54,6 +54,24 @@ bot.on("ready", async () => {
 	}, 5000)
 });
 
+bot.on('voiceStateUpdate', (oldMember, newMember) => {
+  let newUserChannel = newMember.voiceChannel
+  let oldUserChannel = oldMember.voiceChannel
+
+
+  if(oldUserChannel === undefined && newUserChannel !== undefined) {
+
+     // User Joins a voice channel
+	  guildObj.defaultChannel.send('User has joined a voice channel');
+
+  } else if(newUserChannel === undefined){
+
+    // User leaves a voice channel
+	  guildObj.defaultChannel.send('User has left a voice channel');
+
+  }
+})
+
 bot.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
