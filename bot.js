@@ -80,10 +80,6 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	  //QWT
 	 if(newMember.guild.id === '378244597362458625'){
 	 bot.channels.get('406581467766849546').send('User left voice channel in QWT');}
-	  //Squad
-	  if(newMember.guild.id === '424271595943755776'){
-	 bot.channels.get('424271595943755778').send('Iemand is uit de voice channel gegaan');}
-
   }
 });
 
