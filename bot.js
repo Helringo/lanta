@@ -71,7 +71,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	  //Squad
 	  if(newMember.guild.id === '424271595943755776'){
 		  var lad = newMember.guild.roles.get('name', 'lad');
-	 bot.channels.get('424271595943755778').send(lad.mention() + " zit nu in voice channel");}
+	 bot.channels.get('424271595943755778').send(lad.toString() + " zit nu in voice channel");}
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
