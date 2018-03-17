@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const prefix = botSettings.prefix;
 
-const bot = new Discord.Client({disableEveryone: true});
+const bot = new Discord.Client({disableEveryone: false});
 bot.commands = new Discord.Collection();
 bot.mutes = require("./mutes.json");
 
@@ -67,7 +67,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	 bot.channels.get('424347348920172554').send('User joined voice channel in LnM');}
 	  //QWT
 	 if(newMember.guild.id === '378244597362458625'){
-	 bot.channels.get('406581467766849546').send("User joined voice channel in QWT" + "@here");}
+	 bot.channels.get('406581467766849546').send("User joined voice channel in QWT " + "@here");}
 	  //Squad
 	  if(newMember.guild.id === '424271595943755776'){
 		  var lad = newMember.guild.roles.get('name', 'lad');
