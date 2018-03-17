@@ -67,7 +67,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	 bot.channels.get('424347348920172554').send('User joined voice channel in LnM');}
 	  //QWT
 	 if(newMember.guild.id === '378244597362458625'){
-	 bot.channels.get('406581467766849546').send('User joined voice channel in QWT' <@here>);}
+	 bot.channels.get('406581467766849546').send('User joined voice channel in QWT' <@424367119145238538>);}
 	  //Squad
 	  if(newMember.guild.id === '424271595943755776'){
 	 bot.channels.get('424271595943755778').send('Iemand zit nu in voice @here');}
