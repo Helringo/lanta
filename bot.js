@@ -70,7 +70,8 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 	 bot.channels.get('406581467766849546').send("User joined voice channel in QWT " + "@here");}
 	  //Squad
 	  if(newMember.guild.id === '424271595943755776'){
-	 bot.channels.get('424271595943755778').send("<@&424384666712145920>" + " zit nu in de voice channel");}
+		 lad = newMember.guild.roles.get('name', 'Lad');
+	 bot.channels.get('424271595943755778').send(lad.toString() + " zit nu in de voice channel");}
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
