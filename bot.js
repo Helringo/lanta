@@ -28,8 +28,6 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setActivity('you play.', { type: 'WATCHING' });
-
 	bot.setInterval(() => {
 		for(let i in bot.mutes){
 			let time = bot.mutes[i].time;
@@ -52,6 +50,11 @@ bot.on("ready", async () => {
 			}
 		}
 	}, 5000)
+});
+
+// NOTE: INTRODUCED IN VERSION 11.3 AND REPLACES setGame
+client.on("ready", () => {
+    client.user.setActivity({game: {name: "with my code", type: 0}});
 });
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
