@@ -52,11 +52,6 @@ bot.on("ready", async () => {
 	}, 5000)
 });
 
-// NOTE: INTRODUCED IN VERSION 11.3 AND REPLACES setGame
-bot.on("ready", () => {
-    bot.user.setActivity({game: {name: "with my code", type: 0}});
-});
-
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
   let newUserChannel = newMember.voiceChannel
   let oldUserChannel = oldMember.voiceChannel
