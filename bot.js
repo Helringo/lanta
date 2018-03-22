@@ -53,8 +53,8 @@ bot.on("ready", async () => {
 });
 
 // NOTE: INTRODUCED IN VERSION 11.3 AND REPLACES setGame
-client.on("ready", () => {
-    client.user.setActivity({game: {name: "with my code", type: 0}});
+bot.on("ready", () => {
+    bot.user.setActivity({game: {name: "with my code", type: 0}});
 });
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
