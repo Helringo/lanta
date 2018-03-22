@@ -28,7 +28,6 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setActivity('YouTube', { type: 'WATCHING' });
 	bot.setInterval(() => {
 		for(let i in bot.mutes){
 			let time = bot.mutes[i].time;
@@ -51,6 +50,10 @@ bot.on("ready", async () => {
 			}
 		}
 	}, 5000)
+});
+
+bot.on('ready', () => {
+	bot.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
