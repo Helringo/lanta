@@ -7,7 +7,7 @@ message.channel.send("Surely, please wait a moment");
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
 	      try{
-    await message.channel.send("Here you go", {files: [body[0].file_url]});
+    message.channel.send("Here you go", {files: [body[0].file_url]});
   } catch(error) {//here goes if someAsyncPromise() rejected}
     return message.channel.send("Sorry, something went wrong.");
   });    
