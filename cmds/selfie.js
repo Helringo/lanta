@@ -1,6 +1,6 @@
 request = require("request");
 module.exports.run = async (bot, message, args) => {
-message.send("Surely, please wait a moment");
+message.channel.send("Surely, please wait a moment");
     request({
       url: 'https://safebooru.donmai.us/posts.json?random=true&limit=1&tags=atalanta_%28fate%29',
       json: true
@@ -11,9 +11,9 @@ message.send("Surely, please wait a moment");
           description: "Here you go",
           color: 0xff0000
         }
-        message.channel.sendMessage("", { embed: selfie });
+        message.channel.send("", { embed: selfie });
       } else {
-        message.send("I'm sorry, the camera is broken");
+        message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
         console.log(body);
       }
