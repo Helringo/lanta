@@ -1,7 +1,8 @@
 request = require('request');
-module.exports = {
-  exec: (client, message, content, args) => {
-    message.send("Surely, please wait a moment");
+
+
+module.exports.run = async (bot, message, args) => {
+message.send("Surely, please wait a moment");
     request({
       url: 'https://safebooru.donmai.us/posts.json?random=true&limit=1&tags=atalanta_%28fate%29',
       json: true
@@ -18,6 +19,9 @@ module.exports = {
         console.log(err);
         console.log(body);
       }
-    });
-  }
+});
+}
+
+module.exports.help = {
+	name: "selfie"
 }
