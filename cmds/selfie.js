@@ -10,7 +10,7 @@ message.channel.send("Surely, please wait a moment");
     message.channel.send("Here you go", {files: [body[0].file_url]});
   } catch(error) {//here goes if someAsyncPromise() rejected}
     return message.channel.send("Sorry, something went wrong.");
-  });    
+  };    
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
