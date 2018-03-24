@@ -11,7 +11,7 @@ message.channel.send("Surely, please wait a moment");
           description: "Here you go",
           color: 0xff0000
         }
-        message.channel.send("", { embed: selfie });
+        message.channel.send("Here you go", {files: [body[0].file_url]});
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
