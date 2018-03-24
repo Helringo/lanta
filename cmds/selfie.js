@@ -1,6 +1,4 @@
-request = require('request');
-
-
+request = require("request");
 module.exports.run = async (bot, message, args) => {
 message.send("Surely, please wait a moment");
     request({
