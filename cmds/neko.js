@@ -20,5 +20,5 @@ message.channel.send("Surely, please wait a moment");
 }
 
 module.exports.help = {
-	name: "selfie"
+	name: "neko"
 }
