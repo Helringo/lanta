@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 	const thonk16 = bot.emojis.find("name", "feliciathonk");
 	const thonk17 = bot.emojis.find("name", "cordeliathonk");
 	const thonk18 = bot.emojis.find("name", "lukasthonk");
-	const thonk19 = bot.emojis.find("name", "arthurthonk");
+	const thonk19 = bot.emojis.find("name", "ephraimthonk");
 	const thonk20 = bot.emojis.find("name", "sorenthonk");
    message.channel.send(`${thonk} ${thonk2} ${thonk3} ${thonk4} ${thonk5} ${thonk6} ${thonk7}
 			${thonk8} ${thonk9} ${thonk10} ${thonk11} ${thonk12} ${thonk13} ${thonk14}
