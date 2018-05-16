@@ -237,8 +237,8 @@ module.exports.run = async (bot, message, args) => {
             },
             footer: tFooter
         };
-        console.log(`Sending ${poke} dex to guild ${msg.guild.name}`);
-        msg.channel.send("\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n**" + capitalizeFirstLetter(poke) + "**", {
+        console.log(`Sending ${poke} dex to guild ${message.guild.name}`);
+        message.channel.send("\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n**" + capitalizeFirstLetter(poke) + "**", {
                 embed: dexEmbed
             })
             .catch(console.error);
@@ -250,7 +250,7 @@ module.exports.run = async (bot, message, args) => {
         } else {
             dymString = `Did you mean \`${dym}\`?`;
         }
-        msg.channel.send("⚠ Dex entry not found! " + dymString);
+        message.channel.send("⚠ Dex entry not found! " + dymString);
     }
 };
 
