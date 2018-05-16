@@ -59,11 +59,7 @@ request('https://raw.githubusercontent.com/Zarel/Pokemon-Showdown/master/data/fo
 });
 
 module.exports.help = {
-    name: 'dex',
-    usage: ['dex <query>'],
-    example: ['dex reuniclus'],
-    shortDesc: 'Shows information on a Pokémon.',
-    longDesc: 'Shows important information on a Pokémon, such as its abilities, base stats and its most recent Pokédex entry.'
+    name: 'dex'
 };
 
 module.exports.action = (msg, args) => {
