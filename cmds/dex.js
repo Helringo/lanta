@@ -174,8 +174,8 @@ module.exports.run = async (bot, message, args) => {
             icon_url: "https://cdn.rawgit.com/msikma/pokesprite/master/icons/pokemon/regular/" + poke.replace(" ", "-").toLowerCase() + ".png"
         };*/
         tFooter = {
-            text: 'Support Beheeyem by becoming a patron! https://patreon.com/beheeyem',
-            icon_url: 'https://cdn.rawgit.com/110Percent/beheeyem/gh-pages/include/favicon.png'
+            text: 'Servants can be trainers too.',
+            icon_url: 'https://cdn.discordapp.com/emojis/382551105693024266.png'
         };
         let totalStats = 0;
         for (let i in pokeEntry.baseStats) {
