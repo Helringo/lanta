@@ -63,7 +63,7 @@ module.exports.help = {
 };
 
 module.exports.run = async (bot, message, args) => {
-    mm = minimist(args.split(' '));
+    mm = minimist(args);
     mainArgs = mm._.join(' ');
     locale = mm.lang && locales[mm.lang] ? locales[mm.lang] : locales.en;
     var poke = mainArgs.toLowerCase();
