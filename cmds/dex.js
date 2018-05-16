@@ -62,7 +62,7 @@ module.exports.help = {
     name: 'dex'
 };
 
-module.exports.run = (msg, args) => {
+module.exports.run = async (bot, message, args) => {
     mm = minimist(args.split(' '));
     mainArgs = mm._.join(' ');
     locale = mm.lang && locales[mm.lang] ? locales[mm.lang] : locales.en;
@@ -72,7 +72,7 @@ module.exports.run = (msg, args) => {
         poke = aliases[poke];
     }
     poke = poke.toLowerCase();
-    let a = otherAliases.aliases(msg.guild.id);
+    let a = otherAliases.aliases(message.guild.id);
     for (let r in a) {
         if (poke.startsWith(r)) poke = poke.replace(`${r} `, `${a[r]} `);
         if (poke.endsWith(r)) poke = poke.replace(` ${r}`, ` ${a[r]}`);
