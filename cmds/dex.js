@@ -58,7 +58,7 @@ request('https://raw.githubusercontent.com/Zarel/Pokemon-Showdown/master/data/fo
     }
 });
 
-module.exports = {
+module.exports.help = {
     name: 'dex',
     usage: ['dex <query>'],
     example: ['dex reuniclus'],
