@@ -62,7 +62,7 @@ module.exports.help = {
     name: 'dex'
 };
 
-module.exports.action = (msg, args) => {
+module.exports.run = (msg, args) => {
     mm = minimist(args.split(' '));
     mainArgs = mm._.join(' ');
     locale = mm.lang && locales[mm.lang] ? locales[mm.lang] : locales.en;
