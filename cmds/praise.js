@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 	if(!target){
 		return message.channel.send(`Solaire praises the sun ${praise}`);
 }else{
-	message.channel.send(`${praise}${target} has praised the sun${praise}`,
+	message.channel.send(`${praise} :sunny: ${target} has praised the sun${praise} :sunny:`,
 			     {files: ["https://cdn.discordapp.com/emojis/451150472624078868.png"]});
 	message.react(`${praise}`);
 }
