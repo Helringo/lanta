@@ -4,10 +4,12 @@ module.exports.run = async (bot, message, args) => {
 	if(!target){
 		return message.channel.send(`Solaire praises the sun ${praise}`);
 }else{
-	message.channel.send(`${praise} ${target} has praised the sun${praise}`, {files: ["https://cdn.discordapp.com/emojis/451150472624078868.png"]});
+	message.channel.send(`${praise}${target} has praised the sun${praise}`,
+			     {files: ["https://cdn.discordapp.com/emojis/451150472624078868.png"]});
+	message.react(`${praise}`);
 }
 }
 
 module.exports.help = {
-	name: "praiseit"
+	name: "praise"
 }
