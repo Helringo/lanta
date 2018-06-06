@@ -2,7 +2,7 @@ request = require("request");
 module.exports.run = async (bot, message, args) => {
 message.channel.send("Surely, please wait a moment");
     request({
-      url: 'https://safebooru.donmai.us/posts.json?random=true&limit=1&tags=cat_ears',
+      url: 'https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=cat_ears',
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
