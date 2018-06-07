@@ -14,8 +14,11 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[3] = 'lyndis_%28fire_emblem%29';
 	waifArray[4] = 'd.va_%28overwatch%29';
 	waifArray[5] = 'caster';
+	waifArray[6] = 'widowmaker_%28overwatch%29';
+	waifArray[7] = 'frankenstein%27s_monster_%28fate%29';
+	waifArray[8] = 'niijima_makoto';
 
-let randowaif = Math.floor(Math.random() * 6);
+let randowaif = Math.floor(Math.random() * 9);
 let waiftag = waifArray[randowaif];
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}`;
     
