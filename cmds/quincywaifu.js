@@ -9,8 +9,9 @@ message.channel.send("Surely, please wait a moment");
 }
 	var waifArray = new Array();
 	waifArray[0] = 'nero_claudius_%28fate%29_%28all%29';
+	waifArray[1] = 'okita_souji_%28fate%29';
 
-let randowaif = Math.floor(Math.random() * 1);
+let randowaif = Math.floor(Math.random() * 2);
 let waiftag = waifArray[randowaif];
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}`;
     
@@ -34,5 +35,5 @@ let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${
 }
 
 module.exports.help = {
-	name: "umu"
+	name: "quincywaifu"
 }
