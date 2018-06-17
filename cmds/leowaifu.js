@@ -16,6 +16,7 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[5] = 'shuten_douji_%28fate%2Fgrand_order%29';
 	waifArray[6] = 'oda_nobunaga_%28fate%29';
 	waifArray[7] = 'sakura_futaba';
+	waifArray[8] = 'kairi_%28kingdom_hearts%29';
 
 let randowaif = Math.floor(Math.random() * 8);
 let waiftag = waifArray[randowaif];
