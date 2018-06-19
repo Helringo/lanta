@@ -17,8 +17,9 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[6] = 'oda_nobunaga_%28fate%29';
 	waifArray[7] = 'sakura_futaba';
 	waifArray[8] = 'kairi_%28kingdom_hearts%29';
+	waifArray[9] = 'ibaraki_douji_%28fate%2Fgrand_order%29';
 
-let randowaif = Math.floor(Math.random() * 9);
+let randowaif = Math.floor(Math.random() * 10);
 let waiftag = waifArray[randowaif];
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}`;
     
