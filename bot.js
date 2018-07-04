@@ -85,6 +85,8 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 bot.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
+	if(message.content === "Lanta, you there?") {
+    		message.channel.send("Yes, I'm here~");
 
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
