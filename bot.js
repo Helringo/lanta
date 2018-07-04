@@ -8,6 +8,12 @@ const bot = new Discord.Client({disableEveryone: false});
 bot.commands = new Discord.Collection();
 bot.mutes = require("./mutes.json");
 
+const responseObject = {
+  "ayy": "Ayy, lmao!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp"
+};
+
 fs.readdir("./cmds/", (err, files) => {
 	if(err) console.error(err);
 
@@ -85,8 +91,8 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 bot.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
-	if(message.content === "Lanta, you there?") {
-    		message.channel.send("Yes, I'm here~");
+	if(responseObject[message.content]) {
+    		message.channel.send(responseObject[message.content]);
 
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
