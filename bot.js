@@ -89,7 +89,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 
 bot.on("message", async message => {
 	if(message.author.bot) return;
-	if(message.channel.type === "dm") return;
+	//if(message.channel.type === "dm") return;
 	if(responseObject[message.content]) {
     		message.channel.send(responseObject[message.content]);
 	}
