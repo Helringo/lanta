@@ -10,7 +10,7 @@ bot.mutes = require("./mutes.json");
 
 const responseObject = {
   "Lanta, you there?": "Yes, I'm here~",
-  "Marry me Lanta!": "Only if you beat me in a footrace"
+  "Marry me Lanta!": "Only if you beat me in a footrace."
 };
 
 fs.readdir("./cmds/", (err, files) => {
