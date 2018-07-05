@@ -35,5 +35,5 @@ let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${
 }
 
 module.exports.help = {
-	name: "cocowaifu"
+	name: "mericwaifu"
 }
