@@ -2,10 +2,18 @@ request = require("request");
 module.exports.run = async (bot, message, args) => {
 message.channel.send("Surely, please wait a moment");
 
-    let tag = args.join("_");
+    let tags = args.join("_");
+    let tagsplit = args.split('|');
+    let tag1 = tagsplit[1];
+    let tag2 = tagsplit[2];
+	if(!tagsplit[2]){
+		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`
+	}else{
+		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`
+	}
 
     request({
-      url: `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag}`,
+      url: tagurl,
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
