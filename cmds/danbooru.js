@@ -7,9 +7,9 @@ message.channel.send("Surely, please wait a moment");
     let tag1 = tagsplit[1];
     let tag2 = tagsplit[2];
 	if(!tagsplit[2]){
-		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`
+		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`;
 	}else{
-		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`
+		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`;
 	}
 
     request({
