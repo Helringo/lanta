@@ -3,7 +3,7 @@ module.exports.run = async (bot, message, args) => {
 message.channel.send("Surely, please wait a moment");
 
     let tags = args.join("_");
-    let tagsplit = tags.split('|');
+    let tagsplit = tags.split('_|_');
     let tag1 = tagsplit[0];
     let tag2 = tagsplit[1];
 	let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=`;
