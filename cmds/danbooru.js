@@ -6,10 +6,11 @@ message.channel.send("Surely, please wait a moment");
     let tagsplit = tags.split('|');
     let tag1 = tagsplit[0];
     let tag2 = tagsplit[1];
+	let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=`;
 	if(!tagsplit[1]){
-		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`;
+		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`;
 	}else{
-		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`;
+		tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`;
 	}
 
     request({
