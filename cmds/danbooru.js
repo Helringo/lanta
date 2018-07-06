@@ -4,9 +4,9 @@ message.channel.send("Surely, please wait a moment");
 
     let tags = args.join("_");
     let tagsplit = tags.split('|');
-    let tag1 = tagsplit[1];
-    let tag2 = tagsplit[2];
-	if(!tagsplit[2]){
+    let tag1 = tagsplit[0];
+    let tag2 = tagsplit[1];
+	if(!tagsplit[1]){
 		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}`;
 	}else{
 		let tagurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag1}+${tag2}`;
