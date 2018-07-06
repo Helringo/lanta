@@ -3,7 +3,7 @@ module.exports.run = async (bot, message, args) => {
 message.channel.send("Surely, please wait a moment");
 
     let tags = args.join("_");
-    let tagsplit = args.split('|');
+    let tagsplit = tags.split('|');
     let tag1 = tagsplit[1];
     let tag2 = tagsplit[2];
 	if(!tagsplit[2]){
