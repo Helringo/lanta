@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("userinfo [mention]", "Lists various info about the mentioned user or the author")
     .addField("---- Fun Commands ----", "The main purpose of these commands is to liven up the server~")
     .addField("selfie", "I will try to take a selfie and show it off to everyone~\nCan contain NSFW pictures!")
-    .addField("danbooru [tag]", "Search Danbooru for a certain tag or leave blank for a completely random image.") 
+    .addField("danbooru [tag] | [tag]", "Search Danbooru for a certain tag (max 2) or leave blank for a completely random image.") 
     .addField("neko", "I will try and send a picture of cute (or lewd) catgirls~!")
     .addField("bless", "I'll bestow my blessing on you~!")
     .addField("praise", "Praise the Sun!")
