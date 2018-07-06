@@ -5,7 +5,7 @@ message.channel.send("Surely, please wait a moment");
     let tag = args.join("_");
 
     request({
-      url: `https://safebooru.donmai.us/posts.json?random=true&limit=1&tags=${tag}`,
+      url: `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${tag}`,
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
