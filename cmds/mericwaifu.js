@@ -21,7 +21,13 @@ message.channel.send("Surely, please wait a moment");
 
 let randowaif = Math.floor(Math.random() * 9);
 let waiftag = waifArray[randowaif];
-let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}`;
+let rating = args.join("_");
+let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;
+	if(rating === "sfw"){
+	waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:safe`;	
+	}else{
+	waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;	
+}
     
     
     request({
