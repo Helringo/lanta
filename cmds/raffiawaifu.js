@@ -21,7 +21,7 @@ let randowaif = Math.floor(Math.random() * 8);
 let waiftag = waifArray[randowaif];
 let rating = args.join("_");
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;
-	if(rating === sfw){
+	if(rating === "sfw"){
 	waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:safe`;	
 	}else{
 	waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;	
