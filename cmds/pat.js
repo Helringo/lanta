@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
 		return message.channel.send(`Aww... hugging yourself, huh? Let me give you one :uwuhug:`);
 
 }else{
-	message.channel.send(`${patter} gives a hug to ${pattee} :heart:`, {files: [imgArray[randopic]]});
+	message.channel.send(`${patter} pats ${pattee} :heart:`, {files: [imgArray[randopic]]});
 }
 }
 
