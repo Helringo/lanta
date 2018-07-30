@@ -91,9 +91,12 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 bot.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
-	if(responseObject[message.content]) {
-    		message.channel.send(responseObject[message.content]);
+	if(!responseObject[message.content]) {
+    		message.channel.send("reply to anything test");
 	}
+	//if(responseObject[message.content]) {
+    	//	message.channel.send(responseObject[message.content]);
+	//}
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
 	let args = messageArray.slice(1);
