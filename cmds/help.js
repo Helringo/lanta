@@ -22,6 +22,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("praise", "Praise the Sun!")
     .addField("say", "Make me say something!")
     .addField("hug <mention>", "Give a hug to the mentioned user!")
+    .addField("pat <mention>", "Pat the mentioned user!")
     .addField("drake <first panel text> | <second panel text>", "I'll generate the Drake meme!")
     .addField("mordor <text>", "One does not simply use this command.")
     .addField("loli [mention]", "So you want lolis, huh?")
