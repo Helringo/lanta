@@ -30,11 +30,12 @@ let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
-	      try{
-    message.channel.send("Here you go", {files: [body[0].file_url]});
-  } catch(error) {//here goes if someAsyncPromise() rejected}
-    return message.channel.send("Sorry, something went wrong.");
-  };    
+	  waifu = {
+          image: { url: body[0].file_url },
+          description: "Here you go~",
+          color: 0x00B28C
+        }
+	message.channel.send("", { embed: waifu });
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
