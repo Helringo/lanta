@@ -18,12 +18,11 @@ message.channel.send("Surely, please wait a moment");
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
-	      danpost = {
-          image: { url: body[0].file_url },
-          description: "Here you go~",
-          color: 0x00B28C
-        }
-	message.channel.send("", { embed: danpost });
+	      let danpost = new Discord.RichEmbed()
+          .setImage(body[0].file_url)
+          .setDescription("Here you go~")
+          .setColor(0x00B28C)
+	  message.channel.send({embed: danpost});
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
