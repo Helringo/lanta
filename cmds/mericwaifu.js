@@ -35,12 +35,11 @@ let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
-	  waifu = {
-          image: { url: body[0].file_url },
-          description: "Here you go~",
-          color: 0x00B28C
-        }
-	message.channel.send("", { embed: waifu });
+	  let waifu = new Discord.RichEmbed()
+          .setImage(body[0].file_url)
+          .setDescription("Here you go~")
+          .setColor(0x00B28C)
+	  message.channel.send({embed: waifu});
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
