@@ -6,12 +6,11 @@ message.channel.send("Surely, please wait a moment");
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
-	      selfie = {
-          image: { url: body[0].file_url },
-          description: "Here you go~",
-          color: 0x00B28C
-        }
-	message.channel.send("", { embed: selfie });
+	      let selfie = new Discord.RichEmbed()
+          .setImage(body[0].file_url)
+          .setDescription("Here you go~")
+          .setColor(0x00B28C)
+	  message.channel.send({embed: selfie});
       } else {
         message.channel.send("I'm sorry, the camera is broken");
         console.log(err);
