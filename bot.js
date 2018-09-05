@@ -11,7 +11,7 @@ bot.mutes = require("./mutes.json");
 const responseObject = {
   "Lanta, you there?": "Yes, I'm here~",
   "Marry me Lanta!": "Only if you beat me in a footrace.",
-  "Hello there!": "General Kenobi!"
+  "Hello there!": "General Kenobi!",
   "Press X to doubt." : ":regional_indicator_x:"
 };
 
