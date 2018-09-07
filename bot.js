@@ -101,9 +101,10 @@ bot.on("message", async message => {
 	}
 	if(message.guild.id === '487704037676810242'){
 		if(!planningPing[message.content]) {
-    			planPing = message.guild.roles.find("name", "ping");
-			message.channel.send(planPing.toString());
-			console.log('test log');
+    			//planPing = message.guild.roles.find("name", "ping");
+			//message.channel.send(planPing.toString());
+			//console.log('test log');
+			message.channel.send('test message');
 		}
 	}
 	let messageArray = message.content.split(" ");
