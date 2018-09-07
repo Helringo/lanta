@@ -99,7 +99,7 @@ bot.on("message", async message => {
 	if(responseObject[message.content]) {
     		message.channel.send(responseObject[message.content]);
 	}
-	if(!planningPing && newMember.guild.id === '487364673872723978') {
+	if(!planningPing[message.content] && newMember.guild.id === '487364673872723978') {
     		planPing = newMember.roles.find("name", "ping");
 		message.channel.send(planPing.toString());
 	}
