@@ -99,13 +99,13 @@ bot.on("message", async message => {
 	if(responseObject[message.content]) {
     		message.channel.send(responseObject[message.content]);
 	}
-	
+	if(message.guild.id === '487704037676810242'){
 		if(!planningPing[message.content]) {
-    			planPing = bot.guilds.roles.find("name", "ping");
+    			planPing = message.guild.roles.find("name", "ping");
 			message.channel.send(planPing.toString());
 			console.log('test log');
 		}
-	
+	}
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
 	let args = messageArray.slice(1);
