@@ -16,7 +16,7 @@ const responseObject = {
 };
 
 const planningPing = {
-	" " : " "
+	
 };
 
 fs.readdir("./cmds/", (err, files) => {
