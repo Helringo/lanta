@@ -15,6 +15,10 @@ const responseObject = {
   "Press X to doubt." : ":regional_indicator_x:"
 };
 
+const planningPing = {
+	" " : " "
+};
+
 fs.readdir("./cmds/", (err, files) => {
 	if(err) console.error(err);
 
@@ -94,6 +98,9 @@ bot.on("message", async message => {
 	if(message.channel.type === "dm") return;
 	if(responseObject[message.content]) {
     		message.channel.send(responseObject[message.content]);
+	}
+	if(!planningPing && newMember.guild.id === '487364673872723978') {
+    		message.channel.send(<@&487704037676810242>);
 	}
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
