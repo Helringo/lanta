@@ -99,8 +99,8 @@ bot.on("message", async message => {
 	if(responseObject[message.content]) {
     		message.channel.send(responseObject[message.content]);
 	}
-	if(!planningPing[message.content] && guild.id === '487364673872723978') {
-    		planPing = guild.roles.find("name", "ping");
+	if(!planningPing[message.content] && bot.guilds.id === '487364673872723978') {
+    		planPing = bot.guilds.roles.find("name", "ping");
 		message.channel.send(planPing.toString());
 	}
 	let messageArray = message.content.split(" ");
