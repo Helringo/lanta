@@ -100,7 +100,8 @@ bot.on("message", async message => {
     		message.channel.send(responseObject[message.content]);
 	}
 	if(!planningPing && newMember.guild.id === '487364673872723978') {
-    		message.channel.send("</@&487704037676810242>");
+    		planPing = newMember.roles.find("name", "ping");
+		message.channel.send(planPing.toString());
 	}
 	let messageArray = message.content.split(" ");
 	let command = messageArray[0];
