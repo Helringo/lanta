@@ -103,6 +103,7 @@ bot.on("message", async message => {
 		if(!planningPing[message.content]) {
     			planPing = bot.guilds.roles.find("name", "ping");
 			message.channel.send(planPing.toString());
+			console.log(planPing.toString());
 		}
 	}
 	let messageArray = message.content.split(" ");
