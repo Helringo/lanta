@@ -12,7 +12,8 @@ const responseObject = {
   "Lanta, you there?": "Yes, I'm here~",
   "Marry me Lanta!": "Only if you beat me in a footrace.",
   "Hello there!": "General Kenobi!",
-  "Press X to doubt." : ":regional_indicator_x:"
+  "Press X to doubt." : ":regional_indicator_x:",
+  "This is so sad, Lanta play despacito." : "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
 };
 
 const planningPing = {
