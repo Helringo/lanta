@@ -21,8 +21,9 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[9] = 'papi_%28monster_musume%29';
 	waifArray[10] = 'miia_%28monster_musume%29';
 	waifArray[11] = 'lala_%28monster_musume%29';
+	waifArray[12] = 'bowsette';
 
-let randowaif = Math.floor(Math.random() * 12);
+let randowaif = Math.floor(Math.random() * 13);
 let waiftag = waifArray[randowaif];
 let rating = args.join("_");
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;
