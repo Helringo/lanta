@@ -11,9 +11,10 @@ message.channel.send("Surely, please wait a moment");
 	var waifArray = new Array();
 	waifArray[0] = 'iris_amicitia';
 	waifArray[1] = 'blanc';
-  waifArray[2] = 'white_heart';
+  	waifArray[2] = 'white_heart';
+	waifArray[3] = 'bowsette';
 
-let randowaif = Math.floor(Math.random() * 3);
+let randowaif = Math.floor(Math.random() * 4);
 let waiftag = waifArray[randowaif];
 let rating = args.join("_");
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;
