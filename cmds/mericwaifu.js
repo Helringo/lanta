@@ -18,9 +18,11 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[6] = 'altera_%28fate%29';
 	waifArray[7] = 'angelise_ikaruga_misurugi';
 	waifArray[8] = 'salamandinay';
+	waifArray[9] = 'kiryuuin_satsuki';
+	waifArray[10] = 'matoi_ryuuko';
 	
 
-let randowaif = Math.floor(Math.random() * 9);
+let randowaif = Math.floor(Math.random() * 11);
 let waiftag = waifArray[randowaif];
 let rating = args.join("_");
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}+rating:explicit`;
