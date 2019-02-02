@@ -11,8 +11,16 @@ message.channel.send("Surely, please wait a moment");
 	var waifArray = new Array();
 	waifArray[0] = 'nero_claudius_%28fate%29_%28all%29';
 	waifArray[1] = 'okita_souji_%28fate%29';
+	waifArray[2] = 'miyamoto_musashi_%28fate%2Fgrand_order%29';
+	waifArray[3] = 'ereshkigal_%28fate%2Fgrand_order%29';
+	waifArray[4] = 'belfast_%28azur_lane%29';
+	waifArray[5] = 'nanami_chiaki';
+	waifArray[6] = 'tsumiki_mikan';
+	waifArray[7] = 'noire';
+	waifArray[8] = 'neptune_%28neptune_series%29';
+	waifArray[9] = 'nepgear';
 
-let randowaif = Math.floor(Math.random() * 2);
+let randowaif = Math.floor(Math.random() * 10);
 let waiftag = waifArray[randowaif];
 let waifurl = `https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=${waiftag}`;
     
