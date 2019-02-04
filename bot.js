@@ -40,7 +40,7 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
 	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setActivity('Artemis\' teachings ', { type: 'LISTENING' });
+	bot.user.setActivity('a flashy transformation', { type: 'PLAYING' });
 	bot.setInterval(() => {
 		for(let i in bot.mutes){
 			let time = bot.mutes[i].time;
