@@ -22,6 +22,7 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[10] = 'tamamo_%28fate%29_%28all%29';
 	waifArray[11] = 'scathach_%28fate%29_%28all%29';
 	waifArray[12] = 'wa2000_%28girls_frontline%29';
+	waifArray[13] = 'tomoe_gozen_%28fate%2Fgrand_order%29';
 
 let randowaif = Math.floor(Math.random() * 13);
 let waiftag = waifArray[randowaif];
