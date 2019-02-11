@@ -22,7 +22,7 @@ message.channel.send("Surely, please wait a moment");
 	waifArray[10] = 'miyamoto_musashi_%28fate%2Fgrand_order%29';
 	waifArray[11] = 'nanami_chiaki';
 	waifArray[12] = 'takeba_yukari';
-	waifArray[13] = 'consort_yu_%28fate%29':
+	waifArray[13] = 'consort_yu_%28fate%29';
 
 let randowaif = Math.floor(Math.random() * 14);
 let waiftag = waifArray[randowaif];
