@@ -29,7 +29,6 @@ module.exports.run = async (bot, message, args) => {
     .addField("respect", "Press F to pay respects")
     .addField("rate <content>", "Have me rate something or someone!")
     .addField("dance", "I'll dance for you~!")
-    .addField("dex <Pokemon name>", "I'll consult my Pokedex for you! Mega Evolutions are also supported.");
     
 	message.author.send({embed: embed});
 }
